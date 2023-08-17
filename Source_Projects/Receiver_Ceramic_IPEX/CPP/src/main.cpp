@@ -493,7 +493,7 @@ void blinkLEDs(uint16_t delay, uint16_t cycles)
 
 void maincpp()
 {
-
+	HAL_Delay(500); // <-- Needs Delay for voltage to settle.
 	setup();
 
 
